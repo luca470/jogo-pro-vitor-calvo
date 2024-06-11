@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      display: flex;
+    }
+
+    #principal {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+
+    img {
+      height: 200px;
+    }
+
+    button {
+      width: 50%;
+    }
+
+    *{
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="principal">
+
+    <br>
+    <p>Primeiro Capítulo: Gulherme e lara eram amigos que trabalhavam em um restaurante localizada em Varosha,
+      uma cidade pequena mas populosa,em que acabaram descobrindo um clube de jogos, que usavam em suas ferias.</p>
+    <p>Os dois foram ao clube de jogos,jogarem jogos de tabuleiro. Qual dos dois jogos de tabuleiro eles devem jogar?
+       Dama, ou  Xadrez:</p>
+    <img src="IMAGENS/IMG1.jpg">
+    <br>
+    <div style="width: 100%; display: flex;">
+
+      <button onclick="Opcao01()">Dama</button>
+      <button onclick="Opcao01()">Xadrez</button>
+
+    </div>
+    <br>
+
+  </div>
+
+  <script>
+
+    function Opcao01() {
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += ' <p> Após algumas rodadas, o ambiente foi ficando pesado, e depois de um tempo os dois começaram a sentir tontura e acabaram desmaiando. Quando Gulherme acordou, percebeu que lara havia sumido. </p> ';
+      conteudo += ' <p> Você deseja ir em busca de lara? </p>';
+      conteudo += '<img src="jogo/ouija.gif">';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Opcao02()">Ir à busca</button> ';
+      conteudo += ' <button onclick="Opcao03()">Não procurar</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+      $("#principal").append(conteudo);
+    }
+
+    function Opcao02() {
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += ' <p> Guilherme então começa a ir em busca de lara, ele acaba se deparando com uma cidade proxima ha sua, </p> ';
+      conteudo += ' <p> ali então sozinho,sem mantimentos e alimentos ele acaba indo em direção a aquela cidade,em sua caminhada ja se sentndo fraco.</p> ';
+      conteudo += ' <p> vc prefere para e poder discansar ou continuar sua caminhada em busa de Lara? </p>';
+      conteudo += '<img src="jogo/midnigth.jpg">';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Opcao04()">Para pra descansar</button> ';
+      conteudo += ' <button onclick="Opcao05()">Continuar a caminhada de Guilherme</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+      $("#principal").append(conteudo);
+    }
+
+    function Opcao03(){
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += ' <p>Guilherme então acaba não procurando Lara e fica bastante pensativo sobre o que poderia acontecer com ela,ele acaba ficando indeciso em que atitude tomar. </p> ';
+      conteudo += ' <p> Qual seria a sua decisão? </p>';
+      conteudo += '<img src="jogo/midnigth.jpg">';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Opcao06()">Ir à busca</button> ';
+      conteudo += ' <button onclick="Opcao07()">Não procurar</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+      $("#principal").append(conteudo);
+    }
+
+    function Opcao04(){
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += ' <p>Guilherme acaba parando em uma pequena casa para poder descansar e poder sacear sua fome,</p> ';
+      conteudo += ' <p> ele entao pretendia ficar por uns 5 dias mas não poderia perde muito tempo</p> ';
+      conteudo += ' <p>Voce deseja ficar 5 dias em um abrigo? .</p>';
+      conteudo += '<img src="jogo/midnigth.jpg">';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Opcao08()">Sim</button> ';
+      conteudo += ' <button onclick="Opcao09()">Não </button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+      $("#principal").append(conteudo);
+    }
+
+    function Opcao05() {
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += ' <p></p> ';
+      conteudo += ' <p> Você deseja ir em busca de lara? </p>';
+      conteudo += '<img src="jogo/ouija.gif">';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Opcao010()">Ir à busca</button> ';
+      conteudo += ' <button onclick="Opcao011()">Não procurar</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+    }
+    
+    
+
+    function Opcao06() {
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += ' <p></p> ';
+      conteudo += ' <p> Você deseja ir em busca de lara? </p>';
+      conteudo += '<img src="jogo/ouija.gif">';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Opcao012()">Ir à busca</button> ';
+      conteudo += ' <button onclick="Opcao013()">Não procurar</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+
+      }
+
+      function Opcao07() {
+      var conteudo = "";
+      conteudo += ' <br> ';
+      conteudo += ' <p>Voce acabou de decidir não ir em busca de Lara!Apos um tempo Guilherme se arrepende amargamente de nao poder busca Lara,</p> ';
+      conteudo += ' <p>Voce desistiu de ir em busca de lara, desaja volta ao inicio?</p>';
+      conteudo += ' <p> Você deseja ir em busca de lara? </p>';
+      conteudo += '<img src="jogo/ouija.gif">';
+      conteudo += ' <br> ';
+      conteudo += ' <div style="width: 100%; display: flex;"> ';
+      conteudo += ' <button onclick="Opcao012()">Ir à busca</button> ';
+      conteudo += ' <button onclick="Opcao013()">Não procurar</button> ';
+      conteudo += ' </div> ';
+      conteudo += ' <br> ';
+
+
+      }
+  </script>
+
+</body>
+
+</html>
